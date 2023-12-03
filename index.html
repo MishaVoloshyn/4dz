@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let gas = prompt("Введите Кол-во топлива:");
+        let counter = 0;
+        let control = gas;
+        console.log(gas);
+        let check = true;
+        do {
+            if (gas > 10) {
+                gas = gas - (control / 10);
+                counter++;
+            }
+            else {
+                check = false;
+            }
+        }
+        while (check == true)
+        console.log("Топлива хватит на :" + counter + " дней");
+    </script>
+</body>
+
+</html>
